@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  padding-top: 70px;
+}
+
+html, body, #root {
+  background-color: #000000;
+  color: #ffffff;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.custom-card {
+  background-color: #000000;
+  color: #ffffff;
+  border: 1px solid #333; /* opcional, para que se vea el borde */
+}
+
+
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #000000 !important;
+}
+
+.navbar-brand, 
+.navbar .nav-link {
+  color: #ffffff !important;
+}
+
+.navbar .nav-link:hover {
+  color: #1E90FF !important;
+}
+
+.btn-accent {
+  background: linear-gradient(45deg, #1E90FF, #39FF14);
+  border: none;
+  color: #000000;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-accent:hover {
+  opacity: 0.85;
+  transform: scale(1.05);
+}
+
+.form-control {
+  background-color: #111111;
+  border: 1px solid #1E90FF;
+  color: #ffffff;
+}
+
+.form-control:focus {
+  border-color: #39FF14;
+  box-shadow: 0 0 8px #39FF14;
+}
+
+.gamer-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.5rem;
+  background: linear-gradient(90deg, #1E90FF, #ff003c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 5px #1E90FF, 0 0 10px #1E90FF, 0 0 20px #ff003c, 0 0 40px #ff003c;
+  animation: neon-flicker 2s infinite alternate;
+}
+
+@keyframes neon-flicker {
+  0% { opacity: 1; text-shadow: 0 0 5px #1E90FF, 0 0 10px #1E90FF, 0 0 20px #ff003c; }
+  50% { opacity: 0.85; text-shadow: 0 0 10px #1E90FF, 0 0 20px #ff003c, 0 0 30px #ff003c; }
+  100% { opacity: 1; text-shadow: 0 0 5px #ff003c, 0 0 15px #1E90FF, 0 0 25px #ff003c; }
+}
+
+.navbar-brand {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.0rem;
+  background: linear-gradient(90deg, #1E90FF, #ff003c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 5px #1E90FF, 0 0 10px #1E90FF, 0 0 20px #ff003c, 0 0 40px #ff003c;
+  animation: neon-flicker 2s infinite alternate;
+}
+
+.footer {
+  background-color: #000;
+  padding: 20px 0;
+  margin-top: 50px;
+}
+
+.social-icon {
+  margin: 0 15px;
+  font-size: 2rem;
+  text-decoration: none;
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-icon i {
+  color: #fff;
+  text-shadow: 0 0 5px #1E90FF, 0 0 10px #39FF14, 0 0 20px #1E90FF, 0 0 40px #39FF14;
+}
+
+.social-icon:hover {
+  transform: scale(1.3);
+  text-shadow: 0 0 10px #1E90FF, 0 0 20px #39FF14, 0 0 40px #1E90FF, 0 0 80px #39FF14;
+}
+
+.instagram i { color: #E1306C; }
+.twitter i   { color: #1DA1F2; }
+.facebook i  { color: #1877F2; }
+.whatsapp i  { color: #25D366; }
+
+#footer {
+  padding: 20px;
+  color: white;
+  background-color: #000000;
+  border: 4px solid;
+  border-image-slice: 1;
+  border-width: 4px;
+  border-image-source: linear-gradient(270deg, #ff00ff, #00ffff, #ffff00, #ff0000, #00ff00, #ff00ff);
+  border-radius: 10px;
+  animation: neonBorder 3s linear infinite;
+}
+
+@keyframes neonBorder {
+  0% { border-image-source: linear-gradient(270deg, #ff00ff, #00ffff, #ffff00, #ff0000, #00ff00, #ff00ff); }
+  50% { border-image-source: linear-gradient(270deg, #00ffff, #ffff00, #ff0000, #00ff00, #ff00ff, #00ffff); }
+  100% { border-image-source: linear-gradient(270deg, #ff00ff, #00ffff, #ffff00, #ff0000, #00ff00, #ff00ff); }
+}
+
+#footer p, #footer a {
+  text-shadow: 0 0 5px #fff, 0 0 10px #ff00ff, 0 0 20px #00ffff;
+  transition: text-shadow 0.3s ease-in-out;
+}
+
+#footer a:hover {
+  text-shadow: 0 0 10px #fff, 0 0 20px #ff00ff, 0 0 30px #00ffff;
+}
+
+.carousel-inner {
+  max-width: 80%;
+  margin: 0 auto 20px auto;
+}
+
+.carousel-item active {
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.catalogo {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.custom-card {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 255, 200, 0.3);
+}
+
+.btn-ubicacion {
+  background: linear-gradient(45deg, #1E90FF, #39FF14);
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-ubicacion:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 12px #39FF14, 0 0 20px #1E90FF;
+  color: #fff;
+}
+
+.custom-card img {
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.consejos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.consejos .card {
+  border: 2px solid #ff0000;
+  border-radius: 10px;
+  background-color: #000000;
+  color: white;
+  box-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 40px #ff1a1a;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.consejos .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #ff3333, 0 0 30px #ff1a1a, 0 0 50px #ff0000;
+}
+
+.productos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.productos .card {
+  background-color: #000;
+  color: #fff;
+  border: 2px solid #39ff14;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #39ff14, 0 0 20px #39ff14;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.productos .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #39ff14, 0 0 40px #39ff14;
+}
+
+.productos .card .btn-primary {
+  background-color: #39ff14;
+  border: none;
+  color: #000;
+  font-weight: bold;
+}
+
+.productos .card .btn-primary:hover {
+  background-color: #00ffcc;
+  color: #000;
+}
+
+.precio-original {
+  text-decoration: line-through;
+  color: red;
+  margin-right: 5px;
+}
+
+.precio-descuento {
+  font-weight: bold;
+  color: #39FF14;
+}
+
+.descuento {
+  display: block;
+  margin-top: 5px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #39FF14;
+}
+
+.dropdown .btn-secondary {
+  background-color: #39ff14;
+  color: #000;
+  border: none;
+  font-weight: bold;
+  box-shadow: 0 0 8px #39ff14, 0 0 15px #39ff14;
+  transition: all 0.3s ease;
+}
+
+.dropdown .btn-secondary:hover {
+  background-color: #32cc10;
+  box-shadow: 0 0 12px #39FF14, 0 0 25px #39ff14;
+  color: #000;
+}
+
+.dropdown-menu {
+  background-color: #0ff;
+  border: none;
+  box-shadow: 0 0 10px #00f, 0 0 20px #00f;
+}
+
+.dropdown-item {
+  color: #000;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #009dff;
+  color: #fff;
+  box-shadow: 0 0 8px #00f, 0 0 15px #00f;
+}
+
+.carrito-icon {
+  font-size: 1.6rem;
+  color: #39FF14;
+  background-color: #000000;
+  padding: 5px 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 0 10px #39FF14, 0 0 20px #39FF14;
+}
+
+.precio-original {
+  text-decoration: line-through;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.precio-descuento {
+  color: #0f0;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.neon-border {
+  border: 3px solid transparent;
+  border-radius: 15px;
+  padding: 10px;
+  background: linear-gradient(45deg, red, orange, yellow, green, cyan, blue, violet);
+  background-size: 600% 600%;
+  animation: neonAnimation 8s linear infinite;
+}
+
+@keyframes neonAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.neon-border table {
+  margin: 0;
+  border-radius: 10px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card-perfil {
+  background-color: #000;
+  color: #fff;
+  border: 3px solid;
+  border-image-slice: 1;
+  border-width: 3px;
+  border-image-source: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
+  padding: 20px;
+  text-align: center;
+}
+
+.card-perfil img {
+  border: 3px solid #39FF14;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.card-perfil .btn {
+  width: 100%;
+  margin-bottom: 10px;
+  background-color: transparent;
+  border: 2px solid #39FF14;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.card-perfil .btn:hover {
+  background-color: #39FF14;
+  color: #000;
+}
+
+.container h2, .container h3 {
+  color: #39FF14;
+}
+
+.productos .card {
+  width: 18rem;
+  background-color: #000;
+  color: #fff;
+  border: 2px solid #39FF14;
+  transition: transform 0.3s ease;
+}
+
+.productos .card:hover {
+  transform: translateY(-5px);
+}
+
+.productos .precio-original {
+  text-decoration: line-through;
+  color: red;
+  font-weight: bold;
+}
+
+.productos .precio-descuento {
+  color: #39FF14;
+  font-weight: bold;
+}
+
+.productos .descuento {
+  font-size: 0.9rem;
+  color: #fff;
+}
+#registroForm #codigoInvitado {
+  border-color: #ff00ff;
+  color: #fff;
+  background-color: #111;
+}
+
+#registroForm #codigoInvitado:focus {
+  border-color: #ff00ff;
+  box-shadow: 0 0 10px #ff00ff;
+}
+.link-neon {
+  color: #39FF14;
+  font-weight: bold;
+  text-decoration: none;
+  text-shadow: 0 0 5px #39FF14, 0 0 10px #39FF14;
+  transition: all 0.3s ease;
+}
+
+.link-neon:hover {
+  color: #00ffcc;
+  text-shadow: 0 0 10px #39FF14, 0 0 20px #00ffcc;
+}
+
